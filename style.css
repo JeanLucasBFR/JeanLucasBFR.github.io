@@ -498,7 +498,7 @@ section .sobre{
 
 @media screen and (max-width: 1020px) {
 
-    /*Remover efeitos dos hover*/
+    /* Remover efeitos dos hover */
     header a:hover, 
     .btn_contato button:hover, 
     .btn_curriculo button:hover, 
@@ -510,56 +510,59 @@ section .sobre{
         box-shadow: none;
     }
 
-    /*deixando o menuo mais pro meio*/
-    .menu-pc{
-        margin-left: -50px;
+    /* Centralizar menu */
+    .menu-pc {
+        margin-left: -30px; 
     }
 
-    .interface .img-topo-site{
-        margin-left: 40px;
+    .interface .img-topo-site {
+        margin-left: 50px; 
     }
 
-    /*Ajusstar layout dos projetos*/
+    /* Ajustar layout dos projetos */
     .projetos-container {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 20px;
-        padding: 20px;
+        gap: 15px; 
+        padding: 15px; 
     }
 
     .projetos-box {
         width: auto;
         height: auto;
         max-width: 90%; 
-        margin: 0 auto;
+        margin: 10px auto;
+        padding: 2px 2px; 
+        background-color: rgba(255, 255, 255, 0.9); 
     }
 
     .projetos-box h3 {
-        font-size: 1.2rem; /*Reduzir tamanho do título*/
+        font-size: 1.2rem; 
+        margin-bottom: 5px; 
     }
 
-    /*Ajustar layout das especialidades*/
+    /* Ajustar layout das especialidades */
     .interface .especialidades {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px; 
         justify-content: center;
     }
 
     .interface .especialidades-box {
-        max-width: 45%; 
+        max-width: 38%; 
         height: auto;
-        padding: 10px;
+        padding: 8px; 
         font-size: 0.9rem;
-        text-align: justify; /*ajustar alinhamentto do texto*/
+        text-align: justify;
         line-height: 1.2; 
-        min-height: 160px; 
+        min-height: 140px; 
         display: flex;
         flex-direction: column;
-        justify-content: space-between; /*aalinhar conteúdo internamente*/
+        justify-content: space-between;
     }
 
-    /*ajustes gerais*/
+    /* Ajustes gerais */
     .txt-topo-site {
         margin-left: 0;
         text-align: center;
@@ -569,10 +572,11 @@ section .sobre{
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 0 auto;
     }
 
     .topo-do-site img {
-        width: 300px;
+        width: 280px; 
         max-width: 100%;
     }
 
@@ -585,13 +589,14 @@ section .sobre{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-left: 40px;
+        margin: 0 auto; 
     }
 
     .sobre .img-sobre img {
-        width: 300px;
-        height: 300px;
+        width: 280px; 
+        height: 280px; 
     }
+
 
     .container-footer {
         display: flex;
