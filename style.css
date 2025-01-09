@@ -512,11 +512,15 @@ section .sobre{
 
     /* Centralizar menu */
     .menu-pc {
-        margin-left: -30px; 
+        margin-left: -50px; 
     }
 
     .interface .img-topo-site {
         margin-left: 50px; 
+    }
+
+    .interface .txt-topo-site{
+        margin-left: 80px;
     }
 
     /* Ajustar layout dos projetos */
@@ -597,6 +601,9 @@ section .sobre{
         height: 280px; 
     }
 
+    .interface .txt-sobre{
+        margin-left: 80px;
+    }
 
     .container-footer {
         display: flex;
@@ -606,7 +613,8 @@ section .sobre{
         padding: 20px;
         text-align: center;
         gap: 5px;
-        justify-content: space-between; 
+        justify-content: space-between;
+        margin-left: 80px;
     }
     
     .icones-footer {
