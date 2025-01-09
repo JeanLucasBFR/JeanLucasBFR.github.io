@@ -1,0 +1,623 @@
+/* CSS Global */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", serif;
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+}
+
+/* Layout */
+.interface {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+
+/* Cabeçalho */
+header {
+    padding: 40px;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul {
+    list-style-type: none;
+    font-size: 22px;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 60px;
+}
+
+header a {
+    color: rgb(253, 253, 253);
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+header a:hover {
+    color: rgb(9, 43, 136);
+    transform: scale(1.2);
+}
+
+/* Botões */
+.btn_contato button {
+    padding: 10px 30px;
+    font-size: 22px;
+    font-weight: 700;
+    background-color: rgb(17, 62, 211);
+    border-radius: 30px;
+    color: black;
+    cursor: pointer;
+    box-shadow: 5px 5px 20px rgb(12, 4, 128);
+    transition: all 0.3s ease;
+}
+
+.btn_contato button:hover {
+    box-shadow: 10px 10px 30px rgb(12, 4, 128);
+    transform: scale(1.1);
+}
+
+.btn_curriculo button {
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 22px;
+    font-weight: 700;
+    background-color: rgb(17, 62, 211);
+    border-radius: 30px;
+    color: black;
+    cursor: pointer;
+    box-shadow: 5px 5px 20px rgb(12, 4, 128);
+    transition: all 0.3s ease;
+}
+
+.btn_curriculo button:hover {
+    box-shadow: 10px 10px 30px rgb(12, 4, 128);
+    transform: scale(1.1);
+}
+
+.btn_codigo button {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 22px;
+    font-weight: 700;
+    border: 1px solid;
+    border-radius: 15px;
+    background-color: rgb(17, 62, 211);
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+}
+
+.btn_codigo button:hover {
+    box-shadow: 10px 10px 30px rgb(12, 4, 128);
+    transform: scale(1.05);
+}
+
+.btn_arquivo button {
+    font-size: 18px;
+    font-weight: 700;
+    border: 2px solid;
+    border-radius: 15px;
+    background-color: rgb(125, 230, 76);
+    cursor: pointer;
+    width: 125px;
+    height: 35px;
+}
+
+.btn_arquivo button:hover {
+    box-shadow: 10px 10px 30px rgb(9, 102, 14);
+    transform: scale(1.05);
+}
+
+/* Botão fixo para voltar */
+.btn-fixo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #686565;
+    color: white;
+    font-size: 16px;
+    border: none;
+    box-shadow: 0 4px 10px rgb(5, 46, 226);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Topo do Site */
+.topo-do-site, .interface{
+    color: white;
+}
+
+.topo-do-site .img-topo-site img {
+    border: 5px solid black;
+    border-radius: 270px;
+    box-shadow: 10px 10px 30px rgb(12, 4, 128);
+    max-width: 100%;
+    height: auto;
+}
+
+.txt-topo-site{
+    margin-left: 150px;
+    font-family: Verdana, sans-serif;
+}
+
+.txt-topo-site h1 {
+    text-shadow: 0 0 3px #1565c0, 0 0 5px #1565c0, 0 0 8px #0d47a1;
+    font-size: 50px;
+}
+
+.txt-topo-site h2 {
+    text-shadow: 0 0 2px #1565c0, 0 0 3px #1565c0, 0 0 6px #0d47a1;
+    font-size: 35px;
+    position: relative;
+    top: -40px
+}
+
+.txt-topo-site span, span h2{
+    color: rgb(11, 34, 170);
+}
+
+.topo-do-site .txt-topo-site p{
+    color: white;
+    margin: 0px 0;
+}
+
+.topo-do-site img{
+    width: 450px;
+}
+
+
+/* Seção de Projetos */
+.projetos ,.interface {
+    text-align: center;
+    padding: 20px 40px;
+    color: white;
+    
+}
+
+.projetos h1, .interface h2{
+    font-size: 50px;
+    margin-top: 60px;
+}
+
+.projetos h1 span, .interface h2 span{
+    color: #0b098b;
+    text-shadow: 0 0 1px #07305f, 0 0 1px #1565c0, 0 0 3px #07316e;
+    font-family: verdana;
+    
+}
+
+.projetos-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+}
+
+.projetos-box {
+    width: 470px;
+    height: 500px;
+    background-color: rgb(4, 66, 97);
+    color: rgb(0, 0, 0);
+    box-shadow: 0 4px 6px rgba(35, 4, 209, 0.89);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+.projetos-box h3{
+    font-size: 1.5rem;
+    background-color: rgb(4, 66, 97);
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.img-box {
+    height: 80%;
+    overflow: hidden;
+}
+
+.img-slide {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.img-slide img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.logo-box {
+    height: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ffffff7e;
+    padding: 10px 0;
+}
+
+.logo-box i {
+    font-size: 1.5rem;
+    color: #000000;
+}
+
+/* Carrossel e Navegação */
+.nav-arrows {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.nav-arrows button {
+    
+    color: rgb(15, 7, 128);
+    border: none;
+    font-size: 1rem;
+    padding: 0px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(0, 0, 0);
+}
+
+
+.indicadores {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.indicador {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Estilos para h4 */
+h4 {
+    color: darkgreen;
+    font-size: 30px;
+}
+
+.btn-fixo a {
+    display: block;  
+}
+
+
+
+/* Estilo ESPECIALIDADES */
+
+
+.especialidades h2{
+    text-align: center;
+    font-family: Verdana, sans-serif;
+}
+
+.interface .especialidades-box{
+    color: white;
+    padding: 12px;
+    border: 2px solid rgb(68, 68, 71);
+    height: 400px;
+    text-align: justify;
+    max-width: 250px;
+    box-shadow: 0 0 5px white; 
+     }
+
+
+
+
+
+.interface .especialidades-box h3{
+    margin-top: 20px;
+    color:rgb(13, 152, 233);
+    text-align: center;;
+}
+
+.interface .especialidades-box p {
+    text-align: justify;
+    margin-top: 20px;
+    margin: 10px 0;
+    font-size: 15px;
+  
+   
+}
+
+/*Cores dos titulos*/
+
+#titulo-laranja{
+    color: orangered;
+}
+
+#titulo-azul{
+    color: darkblue;
+}
+
+#titulo-verde{
+    color: darkgreen;
+}
+
+#titulo-amarelo{
+    color: yellow
+}
+
+
+
+
+/*Estilo sobre*/
+
+
+section .sobre{
+    padding: 80px 4%;
+}
+
+.sobre .txt-sobre{
+    color: white;
+    max-width: 800px;  
+}
+
+
+.sobre .txt-sobre h2{
+    font-size: 50px;
+    line-height: 40px;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.sobre .txt-sobre h2 span{
+    color: rgb(0, 0, 225);
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.sobre .txt-sobre p{
+    margin: 5px 0;
+    text-align: justify;
+}
+
+
+
+
+.sobre .img-sobre {
+    border-radius: 50%; 
+    border: 2px solid transparent; 
+    background: linear-gradient(135deg, rgb(15, 7, 128), rgb(15, 7, 128)); 
+    padding: 3px; 
+}
+
+.sobre .img-sobre img {
+    border-radius: 50%; 
+    object-fit: cover; 
+    height: 500px;
+    width: 500px;
+}
+
+
+
+
+/*Estilizando o Footer*/
+
+
+.container-footer {
+    padding: 0;
+    position: relative;
+    height: 90px;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    box-shadow: 0 4px 15px rgba(0, 102, 255, 0.7);
+}
+
+.portfolio-name {
+    color: #007bff;
+    margin-bottom: 60px;
+    margin-left: 50px;
+    font-size: 18px;
+}
+
+.icones-footer {
+    display: flex;
+    gap: 25px; 
+    align-items: center; 
+    margin-right:80px; 
+}
+
+.icone-group {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+}
+
+.icone-group h3 {
+    margin-top: 3px;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.footer-copy {
+    text-align: center;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #007bff;
+    font-size: 12px;
+}
+
+
+
+.icone-group a:hover, .btn-fixo a:hover {
+    transform: scale(1.15)
+}
+
+
+
+/*Colocando responsividade para mobile*/
+
+@media screen and (max-width: 1020px) {
+
+    /*Remover efeitos dos hover*/
+    header a:hover, 
+    .btn_contato button:hover, 
+    .btn_curriculo button:hover, 
+    .btn_codigo button:hover, 
+    .btn_arquivo button:hover, 
+    .icone-group a:hover, 
+    .btn-fixo a:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    /*deixando o menuo mais pro meio*/
+    .menu-pc{
+        margin-left: -50px;
+    }
+
+    .interface .img-topo-site{
+        margin-left: 40px;
+    }
+
+    /*Ajusstar layout dos projetos*/
+    .projetos-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .projetos-box {
+        width: auto;
+        height: auto;
+        max-width: 90%; 
+        margin: 0 auto;
+    }
+
+    .projetos-box h3 {
+        font-size: 1.2rem; /*Reduzir tamanho do título*/
+    }
+
+    /*Ajustar layout das especialidades*/
+    .interface .especialidades {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .interface .especialidades-box {
+        max-width: 45%; 
+        height: auto;
+        padding: 10px;
+        font-size: 0.9rem;
+        text-align: justify; /*ajustar alinhamentto do texto*/
+        line-height: 1.2; 
+        min-height: 160px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /*aalinhar conteúdo internamente*/
+    }
+
+    /*ajustes gerais*/
+    .txt-topo-site {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .topo-do-site {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .topo-do-site img {
+        width: 300px;
+        max-width: 100%;
+    }
+
+    .sobre .txt-sobre {
+        text-align: center;
+        margin: auto;
+    }
+
+    .sobre .img-sobre {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 40px;
+    }
+
+    .sobre .img-sobre img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .container-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 700px;
+        padding: 20px;
+        text-align: center;
+        gap: 5px;
+        justify-content: space-between; 
+    }
+    
+    .icones-footer {
+        display: contents;
+        justify-content: center;
+        margin-right: 0;
+        gap: 10px; 
+        flex-wrap: wrap;
+    }
+    
+    
+    .footer-copy {
+        position: absolute;
+        bottom: 2px;
+        left: 110px; 
+        margin-left: 0; 
+    }
+
+}
