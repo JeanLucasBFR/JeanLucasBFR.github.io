@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -46,9 +45,9 @@
                     <div class="txt-topo-site">
                         <h1>OLÁ<span>,</span> SOU O JEAN LUCAS</h1>
                         <h2>Estudante de S<span>.</span>I<span>.</span></h2>
-                        <p>Tenho 19 anos e uma grande paixão por tecnologia.<br>Sou movido pela constante busca por aprendizado e evolução em tudo o que faço.<br>Além disso, tenho facilidade para me comunicar e construir boas relações interpessoais.<br>Estou em busca de uma oportunidade de estágio para colocar meus conhecimentos em prática.</p>
+                        <p>Tenho 20 anos e uma grande paixão por tecnologia.<br>Sou movido pela constante busca por aprendizado e evolução em tudo o que faço.<br>Além disso, tenho facilidade para me comunicar e construir boas relações interpessoais.<br>Estou em busca de uma oportunidade de estágio para colocar meus conhecimentos em prática.</p>
                         <div class="btn_curriculo">
-                            <button><a href="curriculo/Currículo_JeanLucas.pdf"target="_blank">Currículo</a></button>
+                            <button><a href="curriculo/Currículo-JeanLucas.pdf"target="_blank">Currículo</a></button>
                         </div>
                     </div>
 
@@ -68,6 +67,27 @@
 
                         <!-- Projeto 1 -->
                         <div class="projetos-box">
+                            <h3>DASHBOARD E INSIGHTS</h3>
+                            <div class="img-box">
+                                <div class="img-slide">
+                                    <video width="100%" height="300px" controls>
+                                        <source src="videos/video_dashboard.mp4" type="video/mp4">
+                                        Seu navegador não suporta o elemento <code>video</code>.
+                                    </video>
+                                </div>
+                            </div>
+                            <div class="btn_codigo">
+                                <button><a href="https://github.com/JeanLucasBFR/Dashboard-de-Vendas-e-Insights" target="_blank">Ver Código</a></button> 
+                            </div>
+                            <div class="logo-box">
+                                <i class="devicon-python-plain"></i>
+                                <i class="fas fa-chart-line" title="Análise de Dados"></i>
+                                <i class="fas fa-file-excel" title="Excel / Planilhas"></i>
+                            </div>
+                        </div>
+
+                        <!-- Projeto 2 -->
+                        <div class="projetos-box">
                             <h3>APP CONTROLE DE ORÇAMENTO</h3>
                             <div class="img-box">
                                 <div class="img-slide">
@@ -84,31 +104,6 @@
                                 <i class="devicon-python-plain"></i>
                                 <i class="fas fa-database"></i>
                                 
-                            </div>
-                        </div>
-
-                        <!-- Projeto 2 -->
-                        <div class="projetos-box">
-                            <h3>PORTFÓLIO JL</h3>
-                            <div class="img-box">
-                                <div class="img-slide">
-                                    <img src="images/img1.png" alt="Projeto 2">
-                                    <img src="images/img2.png" alt="Projeto 2">
-
-                                </div>
-                            </div>
-                            
-                                <div class="btn_codigo">
-                                    <button><a href="https://github.com/JeanLucasBFR/JeanLucasBFR.github.io" target="_blank">Ver Código</a></button> 
-                                </div>
-                                <div class="logo-box">
-                                    <i class="devicon-html5-plain"></i>
-                                    <i class="devicon-css3-plain"></i>
-                                    <i class="devicon-javascript-plain"></i>
-                                </div>
-                            <div class="nav-arrows">
-                                <button class="prev">&#10094;</button>
-                                <button class="next">&#10095;</button>
                             </div>
                         </div>
 
@@ -202,120 +197,94 @@
         </section> <!--Fecha projetos-->
 
 
-        <section class="Habilidades" id="habilidades">
-            <div class="interface">
-                <h2>MINHAS <span>HABILIDADES.</span></h2>
-                <div class="flex">
-                    <div class="especialidades-box">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#007bff" class="bi bi-person-circle" viewBox="0 0 16 16">
-                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
-                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
-                          </svg>
-                          <h3 id="titulo-laranja"> HTML</h3>
-                          <p>Com HTML, criei meu</p>
-<p>portfólio pessoal.</p>
-<p>Desenvolvi um site</p>
-<p>como meu portfólio.</p>
-<p>Criei páginas com</p>
-<p>formulários e tabelas.</p>
+       <section class="habilidades" id="habilidades">
+        <div class="interface">
+            <h2>PRINCIPAIS <span>HABILIDADES.</span></h2>
+            <div class="flex">
+            
+            <!-- Python -->
+            <div class="especialidades-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#007bff" class="bi bi-terminal" viewBox="0 0 16 16">
+                    <path d="M3.146 4.146a.5.5 0 0 1 .708 0L7 7.293 3.854 10.44a.5.5 0 1 1-.708-.708L5.793 7.293 3.146 4.646a.5.5 0 0 1 0-.708z"/>
+                    <path d="M13 13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1 0-1h9a.5.5 0 0 1 .5.5z"/>
+                </svg>
+                <h3>PYTHON</h3>
+                <ul>
+                    <li>Automação de tarefas e processos</li>
+                    <li>Integração com bancos de dados</li>
+                    <li>Análise exploratória de dados</li>
+                </ul>
+            </div>
 
 
-                    </div> <!--Fecha especialidades-box-->
-                    <div class="especialidades-box">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#007bff" class="bi bi-person-circle" viewBox="0 0 16 16">
-                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
-                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
-                          </svg>
-                          <h3 id="titulo-azul">CSS</h3>
-                          <p>Com CSS, estilizei</p>
-<p>vários sites responsivos.</p>
-<p>Criei layouts com</p>
-<p>Flexbox e Grid.</p>
-<p>Adicionei animações</p>
-<p>e transições suaves.</p>
+            <!-- Dados -->
+            <div class="especialidades-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#007bff" class="bi bi-database" viewBox="0 0 16 16">
+                <path d="M4 1c0-1.104.896-2 2-2h4c1.104 0 2 .896 2 2v1c0 1.104-.896 2-2 2H6c-1.104 0-2-.896-2-2V1z"/>
+                <path d="M2 6c0-1.104.896-2 2-2h8c1.104 0 2 .896 2 2v1c0 1.104-.896 2-2 2H4c-1.104 0-2-.896-2-2V6z"/>
+                <path d="M2 11c0-1.104.896-2 2-2h8c1.104 0 2 .896 2 2v1c0 1.104-.896 2-2 2H4c-1.104 0-2-.896-2-2v-1z"/>
+                </svg>
+                <h3>DADOS</h3>
+                <ul>
+                <li>SQL e PostgreSQL</li>
+                <li>Análise e Manipulação de Dados</li>
+                <li>Domínio de Pandas, NumPy, Matplotlib</li>
+                </ul>
+            </div>
+
+            
+
+            <!-- Excel / Power BI -->
+            <div class="especialidades-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#007bff" class="bi bi-bar-chart-line" viewBox="0 0 16 16">
+                <path d="M11 2a1 1 0 0 1 1 1v9.5a.5.5 0 0 0 1 0V3a2 2 0 0 0-2-2h-1a.5.5 0 0 0 0 1h1zM7 6a1 1 0 0 1 1 1v5.5a.5.5 0 0 0 1 0V7a2 2 0 0 0-2-2H6a.5.5 0 0 0 0 1h1zM3 9a1 1 0 0 1 1 1v2.5a.5.5 0 0 0 1 0V10a2 2 0 0 0-2-2H2a.5.5 0 0 0 0 1h1z"/>
+                </svg>
+                <h3>EXCEL / POWER BI</h3>
+                <ul>
+                <li>Manipulação de tabelas e funções</li>
+                <li>Criação de dashboards interativos</li>
+                <li>Análise de dados com gráficos</li>
+                </ul>
+            </div>
+
+            <!-- HTML / CSS / JavaScript -->
+            <div class="especialidades-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#007bff" class="bi bi-code-slash" viewBox="0 0 16 16">
+                <path d="M10.478 1.647a.5.5 0 0 1 .375.606l-3 12a.5.5 0 0 1-.981-.232l3-12a.5.5 0 0 1 .606-.374zM4.854 4.146a.5.5 0 1 1 .707.708L2.707 7.707l2.854 2.853a.5.5 0 0 1-.707.708l-3.207-3.207a.5.5 0 0 1 0-.708L4.854 4.146zm6.292 0a.5.5 0 0 0-.708.708L13.293 7.707l-2.855 2.853a.5.5 0 1 0 .708.708l3.207-3.207a.5.5 0 0 0 0-.708L11.146 4.146z"/>
+                </svg>
+                <h3>HTML / CSS / JAVASCRIPT</h3>
+                <ul>
+                <li>Desenvolvimento de páginas responsivas</li>
+                <li>Criação de formulários e tabelas</li>
+                <li>Interatividade com JavaScript</li>
+                </ul>
+            </div>
+
+            </div><!-- Fecha flex -->
+        </div><!-- Fecha interface -->
+    </section>
 
 
-                    </div> <!--Fecha especialidades-box-->
-                    <div class="especialidades-box">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#007bff" class="bi bi-person-circle" viewBox="0 0 16 16">
-                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
-                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
-                          </svg>
-                          <h3 id="titulo-amarelo">PYTHON</h3>
-                          <p>Com Python, desenvolvi diversos projetos, incluindo sistemas de login e aplicativos para gerenciar orçamentos. Além disso, criei scripts de automação que ajudam a otimizar tarefas no meu dia a dia, sendo assim, aumentando a produtividade.</p>
+
+    <section class="sobre" id="sobre">
+        <div class="interface">
+            <div class="flex">
+                <div class="img-sobre">
+                    <img src="images/img_sobre.jpg" alt="foto_sobre">
+                </div><!--Fecha img-sobre-->
+                <div class="txt-sobre">
+                    <h2>MUITO PRAZER, <span>SOU O JEAN LUCAS.</span></h2>
+                    <p>Olá, meu nome é Jean Lucas, tenho 20 anos e sou apaixonado por transformar dados em informações estratégicas que apoiam decisões inteligentes.</p>
+                    <p>Durante minha trajetória acadêmica e prática, desenvolvi habilidades em análise de dados, manipulação de grandes volumes de informações e criação de dashboards interativos para gerar insights claros e objetivos.</p>
+                    <p>Trabalho com ferramentas como Python (Pandas, NumPy, Matplotlib), SQL, PostgreSQL, Excel e Power BI, aplicando-as para análises avançadas e relatórios automatizados.</p>
+                    <p>Além da área de dados, também atuo como desenvolvedor full stack, criando sistemas e interfaces interativas com HTML, CSS, JavaScript e Python (flask).</p>
+                    <p>Complementando minhas competências técnicas, sou comunicativo, proativo e valorizo o trabalho em equipe, sempre buscando aprender e evoluir continuamente.</p>
+                </div> <!--Fecha txt-sobre-->
+            </div> <!--Fecha flex-->
+        </div><!--Fecha interface-->
+    </section> <!--Fecha sobre-->
 
 
-                    </div> <!--Fecha especialidades-box-->
-                    <div class="especialidades-box">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#007bff" class="bi bi-person-circle" viewBox="0 0 16 16">
-                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
-                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
-                          </svg>
-                          <h3 id="titulo-azul">BANCO DE DADOS</h3>
-                          <p>Usando Postgre e SQL,<p>
-                          </p>trabalhei com</p>
-<p>bancos de dados.</p>
-<p>Aprendi a criar e</p>
-<p>gerenciar tabelas.</p>
-<p>Fiz queries complexas</p>
-<p>para manipular dados.</p>
-
-                    </div> <!--Fecha especialidades-box-->
-                    <div class="especialidades-box">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#007bff" class="bi bi-person-circle" viewBox="0 0 16 16">
-                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
-                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
-                          </svg>
-                          <h3 id="titulo-verde">EXCEL</h3>
-                          <p>No Excel, criei</p>
-<p>e manipulei tabelas.</p>
-<p>Trabalhei com funções</p>
-<p>para automatizar cálculos.</p>
-<p>Utilizei gráficos</p>
-<p>para analisar dados.</p>
-
-                    </div> <!--Fecha especialidades-box-->
-                    <div class="especialidades-box">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#007bff" class="bi bi-person-circle" viewBox="0 0 16 16">
-                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
-                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
-                          </svg>
-                          <h3 id="titulo-amarelo">SOFT SKILLS</h3>
-                          <p>Tenho forte comunicação</p>
-<p>e facilidade em trabalhar</p>
-<p>em equipe, sempre buscando</p>
-<p>entender as necessidades</p>
-<p>e colaborar para soluções</p>
-<p>eficazes e criativas.</p>
-
-                   
-
-                    </div> <!--Fecha especialidades-box-->
-
-                </div><!--Fecha flex-->
-            </div><!--Fecha interface-->
-        </section> <!--Fecha Habilidades-->
-
-
-        <section class="sobre" id="sobre">
-            <div class="interface">
-                <div class="flex">
-                    <div class="img-sobre">
-                        <img src="images/img_sobre.jpg" alt="foto_sobre">
-                    </div><!--Fecha img-sobre-->
-                    <div class="txt-sobre">
-                        <h2>MUITO PRAZER, <span>SOU O JEAN LUCAS.</span></h2>
-                        <p>Olá, meu nome é Jean Lucas, e sou um entusiasta da tecnologia com 19 anos, apaixonado por transformar ideias em projetos concretos.</p>
-                        <p>Durante minha trajetória acadêmica e prática, desenvolvi diversos projetos utilizando ferramentas como HTML, CSS, JavaScript, Python e Excel, sempre buscando unir criatividade e funcionalidade.</p>
-                        <p>Com HTML, CSS e JavaScript, criei interfaces interativas e sites dinâmicos, explorando boas práticas de design responsivo e usabilidade.</p>
-                        <p>Em Python, desenvolvi soluções automatizadas e scripts que otimizam tarefas do dia a dia, enquanto no Excel, apliquei meu conhecimento para criar planilhas inteligentes e modelos de análise de dados.</p>
-                        <p>Além das competências técnicas, possuo habilidades interpessoais que me destacam: comunicação, trabalho em equipe, proatividade e uma grande vontade de aprender sempre mais.</p>
-                       
-                        <!--Fecha icones-->
-                    </div> <!--Fecha txt-sobre-->
-                </div> <!--Fecha flex-->
-            </div><!--Fecha interface-->
-        </section> <!--Fecha sobre-->
 
 
     </main>
